@@ -15,6 +15,30 @@ const agents = ref([
         photo: ('/images/avatar2.png')
     },
     {
+        name: 'Funsho-Adu Omolara',
+        phone: '08131502944',
+        city: 'Ibadan',
+        photo: ('/images/avatar3.png')
+    },
+    {
+        name: 'Janet Emmanuel Alabi',
+        phone: '08131502944',
+        city: 'Lagos',
+        photo: ('/images/avatar4.png')
+    },
+    {
+        name: 'Janet Emmanuel Alabi',
+        phone: '08131502944',
+        city: 'Lagos',
+        photo: ('/images/avatar5.png')
+    },
+    {
+        name: 'Janet Emmanuel Alabi',
+        phone: '08131502944',
+        city: 'Lagos',
+        photo: ('/images/avatar6.png')
+    },
+    {
         name: 'Abiodun Olawale Solomon',
         phone: '08131502944',
         city: 'Akure',
@@ -25,6 +49,66 @@ const agents = ref([
         phone: '08131502944',
         city: 'Lagos',
         photo: ('/images/avatar2.png')
+    },
+    {
+        name: 'Funsho-Adu Omolara',
+        phone: '08131502944',
+        city: 'Ibadan',
+        photo: ('/images/avatar3.png')
+    },
+    {
+        name: 'Janet Emmanuel Alabi',
+        phone: '08131502944',
+        city: 'Lagos',
+        photo: ('/images/avatar4.png')
+    },
+    {
+        name: 'Janet Emmanuel Alabi',
+        phone: '08131502944',
+        city: 'Lagos',
+        photo: ('/images/avatar5.png')
+    },
+    {
+        name: 'Janet Emmanuel Alabi',
+        phone: '08131502944',
+        city: 'Lagos',
+        photo: ('/images/avatar6.png')
+    },
+    {
+        name: 'Abiodun Olawale Solomon',
+        phone: '08131502944',
+        city: 'Akure',
+        photo: ('/images/avatar.png')
+    },
+    {
+        name: 'Adewumi Damilola Alabi',
+        phone: '08131502944',
+        city: 'Lagos',
+        photo: ('/images/avatar2.png')
+    },
+    {
+        name: 'Funsho-Adu Omolara',
+        phone: '08131502944',
+        city: 'Ibadan',
+        photo: ('/images/avatar3.png')
+    },
+    {
+        name: 'Janet Emmanuel Alabi',
+        phone: '08131502944',
+        city: 'Lagos',
+        photo: ('/images/avatar4.png')
+    },
+    {
+        name: 'Janet Emmanuel Alabi',
+        phone: '08131502944',
+        city: 'Lagos',
+        photo: ('/images/avatar5.png')
+    },
+    {
+        name: 'Janet Emmanuel Alabi',
+        phone: '08131502944',
+        city: 'Lagos',
+        photo: ('/images/avatar6.png')
     },
 ])
 </script>
