@@ -26,7 +26,7 @@ const agents = ref([
                     <div class="w-full">
                         <div class="p-4 flex justify-between items-center border-b border-[#f1f1f1] hover:bg-[#f1f1f1]"  v-for="(agent, index) in agents" :key="index">
                             <div class="h-full flex flex-col justify-start items-start">
-                               <img src="./../assets/images/avatar.png" class="h-[50px] w-[50px] rounded-full" alt="">
+                               <img src="./../assets/images/avatar.png" class="h-[50px] w-[50px] rounded-full" alt="image">
             
                             </div>
                             <div class="lg:w-[70%] mx-6 lg:mx-0">
