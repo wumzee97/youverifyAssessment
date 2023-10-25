@@ -6,8 +6,26 @@ const agents = ref([
         name: 'Abiodun Olawale Solomon',
         phone: '08131502944',
         city: 'Akure',
-        photo: require('../assets/images/avatar.png')
-    }
+        photo: ('/images/avatar.png')
+    },
+    {
+        name: 'Adewumi Damilola Alabi',
+        phone: '08131502944',
+        city: 'Lagos',
+        photo: ('/images/avatar2.png')
+    },
+    {
+        name: 'Abiodun Olawale Solomon',
+        phone: '08131502944',
+        city: 'Akure',
+        photo: ('/images/avatar.png')
+    },
+    {
+        name: 'Adewumi Damilola Alabi',
+        phone: '08131502944',
+        city: 'Lagos',
+        photo: ('/images/avatar2.png')
+    },
 ])
 </script>
 <template>
@@ -26,13 +44,13 @@ const agents = ref([
                     <div class="w-full">
                         <div class="p-4 flex justify-between items-center border-b border-[#f1f1f1] hover:bg-[#f1f1f1]"  v-for="(agent, index) in agents" :key="index">
                             <div class="h-full flex flex-col justify-start items-start">
-                               <img src="./../assets/images/avatar.png" class="h-[50px] w-[50px] rounded-full" alt="image">
+                               <img :src="agent.photo" class="h-[50px] w-[50px] rounded-full" alt="image">
             
                             </div>
                             <div class="lg:w-[70%] mx-6 lg:mx-0">
                                 <p class="text-xs font-medium">{{agent.name}}</p>
-                                <p class="text-xs mt-2 text-[#ACB6BE]">08069786754</p>
-                                <p class="text-xs mt-2 text-[#ACB6BE]"> Akure</p>
+                                <p class="text-xs mt-2 text-[#ACB6BE]">{{agent.phone}}</p>
+                                <p class="text-xs mt-2 text-[#ACB6BE]"> {{agent.city}}</p>
                             </div>
             
                             <IconsCaretDownSmallIcon class="rotate-[-90deg] fill-[#023A59]"/>
