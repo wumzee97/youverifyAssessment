@@ -67,7 +67,7 @@ onMounted(() => {
       <input
         type="text"
         placeholder="Search for anything here"
-        class="bg-transparent h-full border-0 focus:border-0 focus:outline-[0px]"
+        class="bg-transparent h-full border-0 focus:border-0 focus:outline-none focus:outline-0"
       />
 
       <IconsSearchIcon class="fill-[#999]" />
