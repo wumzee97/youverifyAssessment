@@ -1,10 +1,15 @@
 <script lang="ts" setup>
+import { initFlowbite } from "flowbite";
 import { useSideBarStore } from "@/stores/sideBar";
 const sideBarStore = useSideBarStore();
 
 const toggleSideBar = () => {
   sideBarStore.toggle();
 };
+
+onMounted(() => {
+  initFlowbite();
+});
 </script>
 <template>
   <header
@@ -48,39 +53,54 @@ const toggleSideBar = () => {
         alt=""
       />
 
-      <div class="relative hidden lg:inline-block text-left ml-6">
-        <div class="group">
-          <button
-            type="button"
-            class="inline-flex justify-center items-center w-full px-4 py-2 text-sm font-medium text-primary focus:outline-none"
-          >
-            Solomon
+      <button
+        id="dropdownDefaultButton"
+        data-dropdown-toggle="dropdown"
+        class="text-[#023A59] focus:outline-none font-medium hidden rounded-lg text-sm px-5  ml-2 text-center lg:inline-flex items-center"
+        type="button"
+      >
+        Solomon
+       <IconsCaretDownSmallIcon class="fill-[#023A59] ml-2" />
+      </button>
 
-            <IconsCaretDownSmallIcon class="ml-6 fill-[#023A59]" />
-          </button>
-
-          <div
-            class="absolute left-0 w-40 mt-1 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300"
-          >
-            <div class="py-1">
-              <a
-                href="#"
-                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >My Profile</a
-              >
-              <a
-                href="#"
-                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >Settings</a
-              >
-              <a
-                href="#"
-                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >Logout</a
-              >
-            </div>
-          </div>
-        </div>
+      <!-- Dropdown menu -->
+      <div
+        id="dropdown"
+        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+      >
+        <ul
+          class="py-2 text-sm text-gray-700 dark:text-gray-200"
+          aria-labelledby="dropdownDefaultButton"
+        >
+          <li>
+            <a
+              href="#"
+              class="block px-4 py-2 hover:bg-[#f1f1f1] dark:hover:bg-gray-600 dark:hover:text-white"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block px-4 py-2 hover:bg-[#f1f1f1]  dark:hover:bg-gray-600 dark:hover:text-white"
+              >Settings</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block px-4 py-2 hover:bg-[#f1f1f1]  dark:hover:bg-gray-600 dark:hover:text-white"
+              >Earnings</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block px-4 py-2 hover:bg-[#f1f1f1] dark:hover:bg-gray-600 dark:hover:text-white"
+              >Sign out</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
   </header>

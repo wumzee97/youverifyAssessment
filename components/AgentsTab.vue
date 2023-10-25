@@ -1,9 +1,18 @@
 <script setup lang="ts">
 const activeTab = ref('unassigned')
+
+const agents = ref([
+    {
+        name: 'Abiodun Olawale Solomon',
+        phone: '08131502944',
+        city: 'Akure',
+        photo: require('../assets/images/avatar.png')
+    }
+])
 </script>
 <template>
   
-        <div class="bg-white ">
+        <div class="bg-white border-l ">
             <div class="w-full">
                 <!-- Tab Header -->
                 <div class="flex  justify-between items-center border-b border-[#f1f1f1] h-[56px] w-full">
@@ -15,13 +24,13 @@ const activeTab = ref('unassigned')
                 <div class=" overflow-y-scroll h-[80vh] pb-20">
                     
                     <div class="w-full">
-                        <div class="p-4 flex justify-between items-center border-b border-[#f1f1f1] hover:bg-[#f1f1f1]"  v-for="i in 20">
+                        <div class="p-4 flex justify-between items-center border-b border-[#f1f1f1] hover:bg-[#f1f1f1]"  v-for="(agent, index) in agents" :key="index">
                             <div class="h-full flex flex-col justify-start items-start">
                                <img src="./../assets/images/avatar.png" class="h-[50px] w-[50px] rounded-full" alt="">
             
                             </div>
-                            <div class="lg:w-[70%]">
-                                <p class="text-xs font-medium">Abiodun Olawale Solomon</p>
+                            <div class="lg:w-[70%] mx-6 lg:mx-0">
+                                <p class="text-xs font-medium">{{agent.name}}</p>
                                 <p class="text-xs mt-2 text-[#ACB6BE]">08069786754</p>
                                 <p class="text-xs mt-2 text-[#ACB6BE]"> Akure</p>
                             </div>

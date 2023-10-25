@@ -3,7 +3,7 @@ const activeTab = ref('unassigned')
 </script>
 <template>
   
-        <div class="bg-white ">
+        <div class="bg-white border-r">
             <div class="w-full">
                 <!-- Tab Header -->
                 <div class="flex  justify-between items-center border-b border-[#f1f1f1] h-[56px] w-full">
